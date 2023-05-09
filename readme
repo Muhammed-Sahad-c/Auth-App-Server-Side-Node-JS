@@ -1,21 +1,18 @@
+Greetings!
 
+I have built an authentication application using the popular backend frameworks,
+Express, and a robust NoSQL database, MongoDB. This application uses secure authentication protocols and methods to ensure user privacy and security.
+By utilizing these technologies, I have created a modern, efficient, and reliable authentication system that can be integrated into any web-based application with ease.
 
-Hello Developers!
+I included:
 
-So I created a authentication application , i created a login , signup with profile page
+* Login with e-mail verification
+* Signup with email and OTP verification
+* Reset password with authenitcation
+* Token Verification
 
-Features I included :
+I used ...
 
-* Signup data submission 
-
-* OTP verification
-
-* Login with email and password & Logout
-
-* For authentication i used JWT (JSON WEB TOKEN)
-
-API Which i used ,
-
-* NodeMailer for senting otp to the mail
-
- 
+- Nodemailer (To sent email)
+- Passport API (not yet)
+- JWT for token authentication
