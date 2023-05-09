@@ -1,0 +1,21 @@
+
+
+Hello Developers!
+
+So I created a authentication application , i created a login , signup with profile page
+
+Features I included :
+
+* Signup data submission 
+
+* OTP verification
+
+* Login with email and password & Logout
+
+* For authentication i used JWT (JSON WEB TOKEN)
+
+API Which i used ,
+
+* NodeMailer for senting otp to the mail
+
+ 
