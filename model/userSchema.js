@@ -4,7 +4,7 @@ const usersSchema = new Schema({
   username: { type: String },
   email: { type: String, unique: true },
   password: { type: String },
-  image: { type: String },
+  profile: { type: String, default: null },
   google: { type: Boolean, default: false },
 });
 

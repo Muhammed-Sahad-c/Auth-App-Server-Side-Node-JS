@@ -27,3 +27,4 @@ router.get('/verifyresetpage', authControllers.verifyEmailSentOrNot);
 router.get('/getuserdetails', verifyToken, authControllers.getUserDetails);
 
 router.post('/googlesignup',authControllers.signupWithGoogle);
+router.get('/googlelogin',authControllers.loginWithGoogle);

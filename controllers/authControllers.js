@@ -199,4 +199,22 @@ export const authControllers = {
       });
     }
   },
+
+  loginWithGoogle: async (req, res, next) => {
+    try {
+      const email = req.headers.email;
+      const isAlreadyUser = await userModel.findOne({ email: email });
+      if (isAlreadyUser) {
+        var token = createToken(isAlreadyUser._id);
+        res.json({ status: true, message: null, token: token });
+      } else
+        res.json({ status: false, message: "email not found!", token: null });
+    } catch (err) {
+      res.json({
+        status: false,
+        message: `something went wrong try again later`,
+        token: null,
+      });
+    }
+  },
 };
